@@ -212,6 +212,10 @@ section{
      .left, .porfolio-left{
 
         display: grid;
+        
+            margin:unset;
+             
+        
         place-content: center;
 
          
@@ -231,3 +235,91 @@ section{
      }
     
  }
+
+ @media only screen and (min-width:1050px){
+     .hero{
+         height: 90vh;
+
+     }
+     .nav-container{
+         display: grid;
+         grid-template-columns: 66% auto;
+       background: unset;  
+       header{
+           background: #6700EE;
+
+       }   
+     }
+     header{
+         padding: 2em 2em 2em 4em;
+
+     }
+     .social-header{
+         padding: 2em 4em 2em 0;
+
+     }
+     section{
+         padding:4em;
+
+     }
+     .social-header{
+         display: block;
+         ul{
+             display: flex;
+             justify-content: space-between;
+             width: 7em;
+             float: right;
+             img{
+                 width: 20px;
+
+
+
+             }
+         }
+     }
+
+     .hero{
+         display: grid;
+         grid-template-columns: 66% auto;
+         background: unset;
+         padding: 0;
+
+         .content{
+             background: #6E00FF;
+             padding: 6em 8em 6em 4em;
+             text-align: left;
+             h1{
+                 font-size: 3em;
+                 line-height: 1.2em;
+             }
+
+
+         }
+     }
+     .meet{
+         margin: unset;
+     }
+     .hero-design{
+
+        display: unset; 
+        margin-left: -50%;
+        margin-top: 15%;
+        width: 100%;
+
+
+     }
+     }
+     
+
+
+     @media only screen and (min-width:1250px){
+
+        .hero .content{
+            padding: 6em 8em 6em 10em;
+
+        }
+        .social-header{
+            padding: 2em 10em 2em 0;
+            
+        }
+     }
